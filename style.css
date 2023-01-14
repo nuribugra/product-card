@@ -13,9 +13,9 @@
     }
 
     .card {
-      width: 600px;
-      max-width: 1000px;
-      min-height: 70vh;
+      width: 100%;
+      max-width: 700px;
+      height: auto;
       margin: 70px auto 0;
       display: flex;
       background-color: #fff;
@@ -41,15 +41,17 @@
     .product-name {
         font-family: 'Fraunces';
         color: hsl(212, 21%, 14%);
+        padding-right: 80px;
     }
 
     .product-description {
         line-height: 30px;
+        padding-right: 20px;
     }
 
     .card-content {
       width: 50%;
-      padding: 20px;
+      padding: 30px;
     }
     .card-content p{
       font-family: 'Montserrat';
@@ -76,7 +78,7 @@
       width: 50%;
       text-decoration: line-through;
       font-size: 15px;
-      padding-top: 10px;
+      padding-top: 12px;
     }
 
 
@@ -96,12 +98,13 @@
       background-color: #2a5747;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 575px) {
 
       .card {
         /* flex-direction: column; */
         display: block;
-        width: 350px;
+        max-width: 90%;
+        margin-top: 30px;
       }
       .card-brand {
         width: 100%;
@@ -123,9 +126,25 @@
 
       .price-box {
         width: 85%;
+        gap: 40px;
       }
 
       .btn {
-        margin: 20px auto;
+        margin: 10px auto;
       }
+
+      .product-name, .product-description {
+        padding-right: 0;
+      }
+
+      .product-description {
+        line-height: 20px;
+      }
+
+      .attribution {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+
     }
